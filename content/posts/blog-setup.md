@@ -44,7 +44,7 @@ The theme is now installed under the `themes/` directory. Noted that a `.gitmodu
 
 Run the development server by using:
 ```bash
-hugo server -D # -D make the server render draft content
+hugo server -D # -D makes the server render draft content
 ```
 
 Generate you site using the build command: `hugo`. You might want to modify `.gitignore` to ignore the output directory `public/` because we could use Github Actions to automate the build-and-deploy pipeline.
@@ -61,21 +61,21 @@ Our goal is to push the generated output i.e the `public/` folder to gh-pages. F
 git subtree push --prefix public origin gh-pages
 ```
 
-This will do, but we want to automate things
+This will do, but we want to automate things.
 
 #### Using Github Actions
 The CI/CD pipeline of our blog is just as simple as adding a new workflow on Github (you can find it in the `Actions` tab of you repo).
 
-Replace the `.yml` job config as follow, you blog site will be updated on new code push to `main`
+Replace the `.yml` job config as follow, you blog site will be updated on new code push to `main` branch
 ```yml
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main  # Set a branch to trigger deploy
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
@@ -97,18 +97,18 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 ```
-If you need to customize the build/deploy task, find the actions' documentation [here](https://github.com/peaceiris/actions-hugo)
+If you need to customize the build/deploy task, find the actions' documentation [here](https://github.com/peaceiris/actions-hugo).
 
 #### Summary
 I have been studying the golang a bit recently and learned that Hugo might be the fastest static site generator. I shall have more insights if my content grows, but it seems very promising to me so far.
 
 The Github Actions are nice, especially for people already familiar with Github. The usage and interface are pretty similar to Azure DevOps I am using for work.
 
-The biggest inspiration from setting up this project is the use of git submodule. At work, my team uses NPM/YARN to manage differnt SDK (node_modules) for a react-native project. Each business unit or vendor feature is cut into a separate git. Different components are assembled as node_modules dependencies in the base app. It took me a whole day just trying to build the app, so it did for other newcomers. It causes some issues: 
+The biggest inspiration from setting up this project is the use of git submodule. At work, my team uses NPM/YARN to manage different SDK (node_modules) for a react-native project. Each business unit or vendor feature is cut into a separate git. Different components are assembled as node_modules dependencies in the base app. It took me a whole day just trying to build the app, so it did for other newcomers. It causes some issues: 
 * Messy dependencies (not knowing which node_modules the code is importing from), probably caused by the peer dependencies config
-* Bad collaboration git flow, people have different project setup, some modify component's code in the `node_modules` folder, some use different js bundler config to maintain a flat folder structure. Different project structure actually affect how node_modules are resolved
+* Bad collaboration git flow, people have different project setup, some modify component's code in the `node_modules` folder, some use different js bundler config to maintain a flat folder structure. Different project structures actually affect how node_modules are resolved
 * Yarn and NPM fail to pulling the latest commits from git repo, the app just won't build the next day if you pull somebody elses' commits
 
 Git submodule seems to be an alternative approach to study on for a integration project with loads of parties/sub-project/vendor modules and features.
 
-The source code for my blog could be found in this [repo](https://github.com/Roytangrb/blog/tree/main)
+The source code for my blog could be found in this [repo](https://github.com/Roytangrb/blog/tree/main).
