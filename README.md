@@ -10,7 +10,8 @@
   * or run `git clone <this-repo.git> -recursive`
 
 ## Deployment
-* Run `git gh-deploy` alias to push `public/` directory to `origin/gh-pages` branch
+* Run `chmod +x deploy.sh`
+* Run `./deploy.sh` to push `public/` directory to `origin/gh-pages` branch
 
 ## References
 * [Hugo setup](https://levelup.gitconnected.com/build-a-personal-website-with-github-pages-and-hugo-6c68592204c7)
