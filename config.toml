@@ -53,5 +53,5 @@ showTags = true             # /tags/
 # custom navigation items
 
 [[params.nav.custom]]
-title = "About"
-url = "/about"
+title = "Github"
+url = "https://github.com/Roytangrb/"
