@@ -1,0 +1,6 @@
+{{- if .Description -}}
+  <meta name="description" content="{{ .Description }}" />
+  <meta itemprop="description" content="{{ .Description }}" />
+  <meta property="og:description" content="{{ .Description }}" />
+  <meta name="twitter:description" content="{{ .Description }}" />
+{{- end -}}

@@ -1,6 +1,7 @@
 ---
 title: "Blogging with Hugo & gh-pages"
 date: 2020-10-17T22:47:38+08:00
+description: 'Tutorial on how to create a blog using Hugo static site generator and host it on Github with gh-pages and Github Actions'
 categories: ['Web']
 tags: ['Hugo', 'Github Actions']
 ---

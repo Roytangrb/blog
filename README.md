@@ -17,3 +17,4 @@
 * [Notepadium Theme](https://github.com/cntrump/hugo-notepadium)
 * [Git submodules](https://www.atlassian.com/git/tutorials/git-submodule)
 * [Publish subdir to gh-pages](https://gist.github.com/cobyism/4730490)
+* [SEO tags](https://www.skcript.com/svr/perfect-seo-meta-tags-with-hugo/)
