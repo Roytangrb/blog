@@ -1,6 +1,16 @@
-{{- if .Description -}}
-  <meta name="description" content="{{ .Description }}" />
-  <meta itemprop="description" content="{{ .Description }}" />
-  <meta property="og:description" content="{{ .Description }}" />
-  <meta name="twitter:description" content="{{ .Description }}" />
+{{- if .IsHome -}}
+  <meta name="google-site-verification" content="ST626f9XJO3vgJztJ6CLioN8u8H2STGoqB3CVpJ4_hU" />
+{{- end -}}
+
+<!--
+  SEO description tags
+-->
+
+{{- $description := cond .IsHome $.Site.Params.description .Description -}}
+
+{{- if $description -}}
+  <meta name="description" content="{{ $description }}" />
+  <meta itemprop="description" content="{{ $description }}" />
+  <meta property="og:description" content="{{ $description }}" />
+  <meta name="twitter:description" content="{{ $description }}" />
 {{- end -}}

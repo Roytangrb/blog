@@ -22,6 +22,8 @@ noClasses = false
 unsafe = true  # enable raw HTML in Markdown
 
 [params]
+author = "Roy Tang"
+description = "Blog - Marking down learning progress"
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
 readingTime = false
