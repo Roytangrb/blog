@@ -8,6 +8,8 @@
 * Run `brew install hugo` & `hugo version`
 * Run `git submodule init` & `git submodule update` to fetch theme dependencies recursively
   * or run `git clone <this-repo.git> -recursive`
+* Run dev server: `hugo server -D`
+* New post: `hugo new posts/<post-title>.md`
 
 ## Deployment
 * [Github Actions - Hugo build & deploy](https://github.com/peaceiris/actions-hugo)

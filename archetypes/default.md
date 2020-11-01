@@ -1,7 +1,7 @@
 +++
 title = "{{ replace .Name `-` ` ` | title }}"
 date = {{ .Date }}
-description = {{ .Description }}
+description = ""
 lastmod = {{ .Date }}
 tags = []
 categories = []
