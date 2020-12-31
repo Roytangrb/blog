@@ -1,5 +1,5 @@
 baseURL = "https://roytangrb.github.io/blog"
-title = "Markdown Porn"
+title = "Blog d(x)"
 theme = "hugo-notepadium"
 copyright = "©2020 Roy Tang"
 
@@ -23,12 +23,12 @@ unsafe = true  # enable raw HTML in Markdown
 
 [params]
 author = "Roy Tang"
-description = "Blog - Marking down learning progress"
+description = "Blog d(x) - Marking down learning progress"
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
 readingTime = false
 logo = ""  # if you have a logo png
-#slogan = ""
+slogan = "slowly dying of terrible developer experience"
 license = ""  # CC License
 fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
 

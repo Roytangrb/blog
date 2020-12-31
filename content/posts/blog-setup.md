@@ -51,7 +51,7 @@ hugo server -D # -D makes the server render draft content
 Generate you site using the build command: `hugo`. You might want to modify `.gitignore` to ignore the output directory `public/` because we could use Github Actions to automate the build-and-deploy pipeline.
 
 #### Host things on github
-Now the project is all setup, we can start writing, styling and play with the markdown porn. We can just push our local git repo to Github. Same old flow of using gh-pages, create a empty git and push the local git up.
+Now the project is all setup, we can start writing, styling and play with purely markdown. We can just push our local git repo to Github. Same old flow of using gh-pages, create a empty git and push the local git up.
 
 Github has changed the default branch from `master` to `main` :). We will use `main` branch as the release branch to trigger deployment later.
 
