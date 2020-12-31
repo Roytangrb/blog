@@ -1,4 +1,4 @@
-baseURL = "https://roytangrb.github.io/blog"
+baseURL = "https://roytangrb.github.io/blog/"
 title = "Blog d(x)"
 theme = "hugo-notepadium"
 copyright = "©2020 Roy Tang"
