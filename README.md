@@ -1,8 +1,10 @@
-# Blog gen src code directory
+# Hugo Blog Src Repo
 
-## Requirements
+## Dependencies
 * `git`
-* `hugo version`: v0.76.5/extended
+* `hugo version`: v0.79.1/extended
+* Theme `notepadium`: `v2.6.2`
+* Update theme: `cd themes/hugo-notepadium && git checkout <release tag>` and commit submodule new commits
 
 ## Development
 * Run `brew install hugo` & `hugo version`
