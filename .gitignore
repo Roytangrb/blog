@@ -1,5 +1,8 @@
-#ignore local build output
+# Ignore local build output
 public/*
 
-#ignore vscode config
+# Ignore vscode config
 .vscode/*
+
+# Temporary lock file while building
+.hugo_build.lock

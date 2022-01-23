@@ -1,7 +1,7 @@
 baseURL = "https://roytangrb.github.io/blog/"
 title = "Blog d(x)"
 theme = "hugo-notepadium"
-copyright = "©2020 Roy Tang"
+copyright = "©2022 Roy Tang"
 
 languageCode = "en-us"
 hasCJKLanguage = true
@@ -28,7 +28,7 @@ style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: bas
 dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
 readingTime = false
 logo = ""  # if you have a logo png
-slogan = "slowly dying of terrible developer experience"
+slogan = ""
 license = ""  # CC License
 fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
 
